@@ -14,6 +14,5 @@
     <string name="record_button">record</string>
     <string name="cancel">cancel</string>
     <string name="finish">finish</string>
-
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
