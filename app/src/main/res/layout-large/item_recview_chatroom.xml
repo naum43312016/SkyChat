@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/messageLayoutItemRecView">
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="16dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/layoutMessage"
+        android:visibility="invisible">
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/imgStrelkaGet"
+            android:layout_gravity="center"
+            android:background="@drawable/charoom_message_get"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@drawable/chatroom_message_textview_send">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text=""
+                android:textColor="#ffffff"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="sans-serif-regular"
+                android:textStyle=""
+                android:textSize="25sp"
+                android:id="@+id/messageTextView"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:fontFamily="sans-serif-light"
+                android:textColor="#CFD8DC"
+                android:textSize="16sp"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/messageTime"
+                android:layout_toRightOf="@id/messageTextView"/>
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/imgStrelkaSend"
+            android:layout_gravity="center"
+            android:background="@drawable/chatroom_message_send"/>
+    </LinearLayout>
+
+
+    <!--fsasgddfhsgfdjhkgfdjshgfassdgf-->
+
+
+
+
+    <!--IMAGE START-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="16dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/layoutMessageImage"
+        android:visibility="invisible">
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/imgStrelkaGetImage"
+            android:layout_gravity="center"
+            android:background="@drawable/charoom_message_get"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@drawable/chatroom_message_textview_send">
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/imageViewMessage"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:fontFamily="sans-serif-light"
+                android:textColor="#CFD8DC"
+                android:textSize="15sp"
+                android:id="@+id/messageTimeImage"
+                android:layout_below="@+id/imageViewMessage" />
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/imgStrelkaSendImage"
+            android:layout_gravity="center"
+            android:background="@drawable/chatroom_message_send"/>
+    </LinearLayout>
+    <!--IMAGE END-->
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="16dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/layoutBtnPlayAudio"
+        android:visibility="invisible">
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/imgAudioStrelkaGet"
+            android:layout_gravity="center"
+            android:background="@drawable/charoom_message_get"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@drawable/chatroom_message_textview_send">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_play_arrow_white_24dp"
+            android:clickable="true"
+            android:layout_alignParentLeft="true"
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/btnPlayAudio"/>
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_pause_white_24dp"
+            android:clickable="true"
+            android:layout_alignParentLeft="true"
+            android:visibility="invisible"
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/btnPauseAudio"/>
+        <SeekBar
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:visibility="visible"
+            android:id="@+id/mediaPlayerAudioMessageSeekBar"
+            android:layout_toRightOf="@id/btnPlayAudio"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:fontFamily="sans-serif-light"
+            android:textColor="#CFD8DC"
+            android:textSize="15sp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/audioMessageTime"
+            android:layout_toRightOf="@id/mediaPlayerAudioMessageSeekBar"/>
+    </RelativeLayout>
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/imgAudioStrelkaSend"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:background="@drawable/chatroom_message_send"/>
+    </LinearLayout>
+    <ProgressBar
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loadingIconChatAudio"
+        android:visibility="invisible"
+        android:layout_gravity="center"
+        android:indeterminate="true" />
+
+</RelativeLayout>

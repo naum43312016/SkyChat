@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/UserSignOut"
+        android:title="Sign out"
+        app:showAsAction="never" />
+    <item android:id="@+id/searchFriendPage"
+        android:title="Search"
+        app:showAsAction="never" />
+    <item android:id="@+id/accountInfo"
+        android:title="My account"
+        app:showAsAction="never" />
+    <item android:id="@+id/requestSent"
+        android:title="My sent requests"
+        app:showAsAction="never" />
+    <!--
+    <item android:id="@+id/UserSignOut"
+        android:icon="@drawable/ic_exit_to_app_white_24dp"
+        android:title="Sign out"
+        app:showAsAction="ifRoom" />
+    <item android:id="@+id/searchFriendPage"
+        android:icon="@drawable/search"
+        android:title="Search"
+        app:showAsAction="ifRoom" />
+        -->
+</menu>

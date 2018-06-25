@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:background="?attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal">
+<!--Accoutn Image-->
+<android.support.v7.widget.CardView
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:elevation="12dp"
+    android:id="@+id/view2"
+    app:cardCornerRadius="40dp"
+    android:innerRadius="0dp"
+    android:shape="ring"
+    android:thicknessRatio="1.9">
+    <ImageView
+        android:layout_height="70dp"
+        android:layout_width="70dp"
+        android:id="@+id/userAccountIconListItem"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop">
+    </ImageView>
+</android.support.v7.widget.CardView>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:id="@+id/item_friends_list_layout"
+    android:background="?attr/selectableItemBackground"
+    android:layout_weight="1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtUserName"
+        android:textSize="20sp"
+        android:textColor="#262626"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtUserMsg"
+        android:textSize="16sp"
+        android:textColor="#262626"
+        android:fontFamily="sans-serif" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtUserMsgTime"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif" />
+    <View
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/dividerVertical"/>
+</LinearLayout>
+<ImageView
+    android:layout_width="34dp"
+    android:layout_height="34dp"
+    android:src="@drawable/new_messages"
+    android:id="@+id/userChatMsgNewMail"
+    android:visibility="invisible"
+    android:layout_gravity="center_vertical" />
+</LinearLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "823359596785",
+    "firebase_url": "https://skychat-f5761.firebaseio.com",
+    "project_id": "skychat-f5761",
+    "storage_bucket": "skychat-f5761.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:823359596785:android:fb203c9aca1f9813",
+        "android_client_info": {
+          "package_name": "asafov.naum.skychat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "823359596785-gc1elv56raqt1o3ssbnduenqpsgb85a8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "asafov.naum.skychat",
+            "certificate_hash": "7a9af3c0e9b69ac0a91425da245a9778a5dc9882"
+          }
+        },
+        {
+          "client_id": "823359596785-k0edhvgpve4hia924a79hfj05b05c83r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkYksCDxSQHDoFaWgKMQpK62G8jWTUwdY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "823359596785-k0edhvgpve4hia924a79hfj05b05c83r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

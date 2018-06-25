@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0285d5</color><!--#3F51B5-->
+    <color name="colorPrimaryDark">#036cad</color><!--#303F9F-->
+    <color name="colorAccent">#FF4081</color>
+    <color name="sendMessage">#0285d5</color>
+    <color name="getMessage">#2196F3</color>
+    <color name="playButton">#ffffff</color>
+    <color name="newMessages">#008B00</color>
+    <color name="mTextColor">#262626</color>
+</resources>
